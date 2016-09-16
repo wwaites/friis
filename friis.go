@@ -28,7 +28,7 @@ func Usage() {
 
 func init() {
 	flag.Usage = Usage
-	flag.Float64Var(&frequency, "f", 5.8e9, "Frequency (default 5.8GHz)")
+	flag.Float64Var(&frequency, "f", 5.8e9, "Frequency in Hz (default 5.8GHz)")
 	flag.Float64Var(&distance, "d", math.NaN(), "Distance in meters (no default)")
 	flag.Float64Var(&txpower, "tx", 27, "Transmitted power in decibel-milliwatts (default: 27dBm)")
 	flag.Float64Var(&rxpower, "rx", math.NaN(), "Received power in decibel-milliwatts (no default)")
